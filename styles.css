@@ -1,0 +1,93 @@
+/* Main Heading Styling */
+body
+{
+    background-color: #0e0923;
+}
+.main-heading {
+    font-size: 36px;            /* Larger font size for the heading */
+    font-weight: bold;          /* Bold text for the heading */
+    color: #ffffff;             /* White color for the heading text */
+    text-align: center;         /* Center-align the text */
+    margin: 20px auto;          /* Center the heading horizontally */
+    text-shadow: 2px 2px 4px rgba(50, 231, 244, 0.942); /* Subtle shadow for better readability */
+    background-color: rgba(31, 12, 30, 0.971); /* Semi-transparent background for contrast */
+    padding: 10px 20px;         /* Padding around the text for better spacing */
+    border-radius: 8px;         /* Rounded corners for the heading background */
+    width: fit-content;         /* Only take up as much width as the content */
+  }
+  
+  /* Chat Container Styling */
+  #chat-container {
+    width: 400px;               /* Width of the chat container */
+    height: 500px;              /* Height of the chat container */
+    border: 1px solid #3bcfe6;     /* Light gray border around the chat container */
+    display: flex;              /* Flexbox layout to manage vertical stacking */
+    flex-direction: column;     /* Stack items vertically */
+    align-items: center;        /* Center items horizontally */
+    margin: 20px auto;          /* Center the container horizontally with a margin */
+    font-family: Arial, sans-serif; /* Font for the chat interface */
+    background-color: #680f6e;  /* Fallback white background for the chat container */
+    background-image: url('premium_photo-1682023587356-86065925727a\ \(1\).avif'); /* Set the background image URL */
+    background-size: cover;     /* Cover the entire chat container with the image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    overflow: hidden;           /* Prevent scrollbars from showing due to background image */
+    padding-top: 20px;          /* Add some padding at the top for spacing */
+  }
+  
+  /* Chat Output Styling */
+  #chat-output {
+    flex-grow: 1;               /* Allows the chat output area to grow and fill available space */
+    overflow-y: auto;           /* Vertical scrollbar appears when content overflows */
+    padding: 10px;              /* Padding around the chat messages */
+    background-color: rgba(14, 14, 36, 0.916); /* Semi-transparent white background for readability */
+    border-radius: 8px;         /* Rounded corners for the chat output area */
+    box-shadow: 0 2px 10px #ee3dd7f1; /* Light shadow for a 3D effect */
+    width: 100%;                /* Full width of the container */
+  }
+  
+  /* User and Bot Message Styling */
+  .user-message, .bot-message {
+    padding: 8px 12px;          /* Padding around each message */
+    border-radius: 12px;        /* Rounded corners for message bubbles */
+    margin: 5px 0;              /* Margin between messages */
+    max-width: 80%;            /* Maximum width for messages */
+    word-wrap: break-word;      /* Wrap long words onto the next line */
+    box-shadow: 0 2px 5px rgba(113, 96, 96, 0.1); /* Light shadow for messages */
+  }
+  
+  /* User Message Specific Styling */
+  .user-message {
+    background-color: #140e28;  /* Light blue background for user messages */
+    align-self: flex-end;       /* Align user messages to the right */
+    color: #efedf3;             /* Dark blue text color for user messages */
+  }
+  
+  /* Bot Message Specific Styling */
+  .bot-message {
+    background-color: #0e0d23;  /* Light gray background for bot messages */
+    align-self: flex-start;     /* Align bot messages to the left */
+    color: #0ef31a;             /* Dark gray text color for bot messages */
+  }
+  
+  /* Image Styling in Chat */
+  .bot-image {
+    margin: 10px 0;             /* Margin above and below images */
+    border-radius: 8px;         /* Rounded corners for images */
+    max-width: 100%;            /* Prevent images from overflowing the container width */
+    height: auto;               /* Maintain aspect ratio */
+    display: block;             /* Display images as block elements to ensure spacing */
+    align-self: flex-start;     /* Align images to the left (same as bot messages) */
+  }
+  
+  /* Input Field Styling */
+  #user-input {
+    border: 1px solid #44123c; /* Light gray border for the input field */
+    padding: 10px;              /* Padding inside the input field */
+    font-size: 16px;            /* Font size for the input text */
+    width: calc(100% - 22px);   /* Full width minus padding */
+    margin: 5px;                /* Margin around the input field */
+    border-radius: 4px; 
+    background-color: #05c9ac;        /* Slightly rounded corners */
+    outline: none;            /* No outline on focus */
+}
